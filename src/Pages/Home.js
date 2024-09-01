@@ -6,7 +6,7 @@ import HowItWorks from '../Components/HowItWorks/HowItWorks'
 
 function Home() {
   return (
-    <div>
+    <div id="home">
         <Hero />
         <About />
         <Sdgs />
