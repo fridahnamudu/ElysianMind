@@ -14,7 +14,7 @@ function Navbar() {
          <div className="desktopMenu">
             <ScrollLink
                activeClass="active"
-               to="home"
+               to=""
                spy={true}
                smooth={true}
                offset={-50}
@@ -97,7 +97,11 @@ function Navbar() {
             onClick={() => {
                var imageElement =
                   document.getElementsByClassName("contactForm1");
-               imageElement[0].scrollIntoView({ behavior: "smooth" });
+                  // fixed cannot read properties of undefined(ImageElements)
+               imageElement.length > 0 ?
+               imageElement[0].scrollIntoView({
+                  behavior: "smooth"
+               }) : null
             }}
          >
             {" "}

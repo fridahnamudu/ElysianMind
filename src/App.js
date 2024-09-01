@@ -4,8 +4,10 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home';
 import Footer from './Components/Footer/Footer';
 import Therapist from './Pages/Therapist';
+import { useEffect } from 'react';
 
 function App() {
+  
   return (
     <div>
       <BrowserRouter>
